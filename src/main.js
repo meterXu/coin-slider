@@ -17,6 +17,7 @@ $('#games').coinslider({
     ]
 });
 
-$("#re").click(()=>{
+$("#re").click((e)=>{
+    e.preventDefault();
     $('#games').coinslider('refresh')
 })
