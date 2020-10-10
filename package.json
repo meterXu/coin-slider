@@ -1,0 +1,30 @@
+{
+    "name": "coin-slider",
+    "title": "Coin Slider",
+    "version": "1.0.0",
+    "author": {
+        "name": "isaac"
+    },
+    "description": "jQuery Image Slider with Unique Effects",
+    "keywords": [
+        "slider",
+        "image"
+    ],
+    "licenses": "MIT",
+    "main":"src/main.js",
+    "scripts": {
+        "dev": "webpack-dev-server --mode development",
+        "build": "webpack --mode production"
+      },
+    "dependencies": {
+        "jquery": ">=1.2.2"
+    },
+    "devDependencies": {
+        "html-webpack-plugin": "^3.2.0",
+        "mini-css-extract-plugin": "^0.5.0",
+        "webpack": "^4.39.1",
+        "webpack-cli": "^3.3.6",
+        "webpack-dev-server": "^3.7.2",
+        "css-loader": "^2.1.1"
+    }
+}
