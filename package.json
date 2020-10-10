@@ -1,16 +1,16 @@
 {
     "name": "coin-slider",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "author": {
         "name": "isaac"
     },
-    "description": "jQuery Image Slider with Unique Effects",
+    "description": "碎片化背景切换效果",
     "keywords": [
         "slider",
         "image"
     ],
     "licenses": "MIT",
-    "main":"src/main.js",
+    "main":"src/index.js",
     "scripts": {
         "dev": "webpack-dev-server --mode development",
         "build": "webpack --mode production"
