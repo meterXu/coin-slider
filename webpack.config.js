@@ -17,13 +17,15 @@ const config = {
         }
     },
     entry: {
-        index:"./src/main.js"
+        index:"./src/index.js"
     },
     output: {
         path: path.resolve(__dirname,"dist"),
         filename: "[name].js",
         publicPath: "/",
-        chunkFilename: "[name].chunk.js"
+        library: 'coinSlider',
+        libraryTarget: 'umd',
+        umdNamedDefine: true
     },
     module: {
         rules: [
