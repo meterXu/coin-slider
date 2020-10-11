@@ -1,3 +1,4 @@
+import jQuery from 'jquery'
 /**
  * Coin Slider - Unique jQuery Image Slider
  * @version: 1.0 - (2010/04/04)
@@ -394,7 +395,8 @@
 				to = 1,
 				to2 = 1,
 				from = 1,
-				dowhile = true;
+				dowhile = true,
+				i;
 
 			while (dowhile) {
 
@@ -478,11 +480,12 @@
 				linksTarget[el.id].push(c[2]||"")
 				titles[el.id].push(c[3]||"")
 			})
-			
+
 
 			// set panel
 			$(el).css({
 				'background-image': 'url("' + images[el.id][0] + '")',
+				'opacity':params[el.id].bgOpacity,
 				'width': params[el.id].width,
 				'height': params[el.id].height,
 				'position': 'relative',
@@ -509,7 +512,7 @@
 				transitionCall(el)
 			}
 		};
-		
+
 
 		this.each (
 			function () {
@@ -533,6 +536,7 @@
 		delay: 3000, // delay between images in ms
 		sDelay: 30, // delay beetwen squares in ms
 		opacity: 0.7, // opacity of title and navigation
+		bgOpacity:1,
 		titleSpeed: 500, // speed of title appereance in ms
 		effect: '', // random, swirl, rain, straight
 		links : true, // show images as links
